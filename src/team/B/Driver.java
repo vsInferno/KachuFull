@@ -169,8 +169,8 @@ public class Driver {
 						if (players[playerTurn].equals(player1)) {
 							System.out.println("\nThese are your cards:\n" + player1.getHand()
 									+ "\n\nThe dominant suit is " + dominant);
-							System.out.print(
-									"(Turn #" + (turn + 1) + ") Please Place a Card by pressing numbers 1 - 5: ");
+							System.out.print("(Turn #" + (turn + 1)
+									+ ") Please select a card by pressing a number 1 - # of cards in hand : ");
 
 							int cardNum = getCardInput(player1, in);
 							cardPlaced = player1.getCard(cardNum);
